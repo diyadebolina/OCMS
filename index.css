@@ -1,0 +1,141 @@
+.abox
+{
+position: relative;
+background: #ffffff;
+overflow: hidden;
+}
+.abox:before
+{
+content: ' ';
+display: block;
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+z-index: 1;
+opacity: 0.5;
+background-image: url(Images/background1.jpg);
+background-attachment: fixed;
+background-position: 50% 50%;
+background-repeat: no-repeat;
+-ms-background-size: cover;
+-o-background-size: cover;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+background-size: cover;
+}
+.abox h1
+{
+position: relative;
+text-align: center;
+z-index: 2;
+margin-top: 40px;
+margin-left: 40px;
+margin-right: 40px;
+padding: 40px;
+text-shadow: 3px 3px white;
+font-family: 'Acme', sans-serif;
+font-size: 3em;
+letter-spacing: 1px;
+color: #08133F;
+}
+.abox h4
+{
+position: relative;
+text-align: center;
+z-index: 2;
+margin-bottom: 50px;
+font-family: 'Acme', sans-serif;
+font-size: 1.5em;
+color: #08133F;
+}
+.abox p
+{
+position: relative;
+text-align: center;
+z-index: 2;
+margin-bottom: 50px;
+font-family: 'Acme', sans-serif;
+font-size: 1.5em;
+color: #08133F;
+}
+
+
+ul
+{
+list-style: none;
+}
+a
+{
+text-decoration: none;
+}
+.sliderbox
+{
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.box
+{
+width: 350px;
+height: 610px;
+background-color: whitesmoke;
+border-radius: 10px;
+box-shadow: 2px 10px 12px rgba(0,0,0,0.5);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+box-sizing: border-box;
+margin: 20px 10px;
+}
+.model
+{
+border-radius: 100px;
+height: 350px;
+max-height: 100%;
+max-width: 100%;
+border: 2px solid aliceblue;
+}
+.details
+{
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 300px;
+}
+.details p
+{
+text-align: center;
+margin-top: 20px;
+    
+}
+
+.box:hover
+{
+background-color: #08133F;
+transform-style: preserve-3d;
+transform: scale(1.02);
+transition: all ease 0.3s;
+color: aliceblue;
+}
+
+/*--responsive for mobile phone--*/
+@media(max-width:720px)
+{
+.box{
+		width: 94%;
+		height: 500px;
+	}
+	.model{
+		height:250px;
+	}
+	.details p{
+		font-size: 16px;
+		width: 250px;
+	}
+}
